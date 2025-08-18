@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Churn Prediction</title>
+</head>
+<body>
+  <h2>Enter Customer Details</h2>
+  <form action="/predict" method="post">
+    <label>Tenure:</label>
+    <input type="text" name="tenure"><br><br>
+
+    <label>Monthly Charges:</label>
+    <input type="text" name="MonthlyCharges"><br><br>
+
+    <label>Total Charges:</label>
+    <input type="text" name="TotalCharges"><br><br>
+
+    <label>Senior Citizen (0/1):</label>
+    <input type="text" name="SeniorCitizen"><br><br>
+
+    <label>Dependents (0/1):</label>
+    <input type="text" name="Dependents"><br><br>
+
+    <input type="submit" value="Predict">
+  </form>
+
+  <h3>{{ prediction_text }}</h3>
+</body>
+</html>
