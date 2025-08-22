@@ -4,8 +4,8 @@ import joblib
 import plotly.express as px
 
 # Load model & scaler once
-model = joblib.load("models/rf_model.pkl")
-scaler = joblib.load("models/scaler.pkl")
+model = joblib.load("C:/Users/Roshan/customer_churn_project/model/churn_model.pkl")
+scaler = joblib.load("C:/Users/Roshan/customer_churn_project/model/scaler.pkl")
 
 st.title("Customer Churn Prediction Dashboard")
 
